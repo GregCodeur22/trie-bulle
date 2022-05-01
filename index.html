@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let firstNumber = 25;
+        let secondNumber = 52;
+
+        console.log(firstNumber);
+        console.log(secondNumber);
+
+        console.log("-------------------------");
+
+        firstNumber = firstNumber + secondNumber;
+        secondNumber = firstNumber - secondNumber;
+        firstNumber = firstNumber - secondNumber;
+
+        console.log(firstNumber);
+        console.log(secondNumber);
+
+        console.log("-----------------------------");
+
+        let word = "Bonjour";
+        let i = 0;
+
+        // while (word[i]) {
+        //   i++;
+        // }
+        // console.log(i);
+
+        console.log("-----------------------------");
+
+        for (let letter of word) {
+            if (letter === "o") {
+                i = i + 1;
+            }
+        }
+        console.log(i);
+
+        let persons = ["jules", "laure", "vincent", "emma"];
+        let personsLength = persons.length;
+
+        for (let main = 0; main < personsLength - 1; main++) {
+            for (let cell = 0; cell < personsLength - main - 1; cell++) {
+                if (persons[cell] > persons[cell + 1]) {
+                    let temp;
+                    temp = persons[cell];
+                    persons[cell] = persons[cell + 1];
+                    persons[cell + 1] = temp;
+                }
+            }
+        }
+        console.log(persons);
+
+    </script>
+</body>
+
+</html>
